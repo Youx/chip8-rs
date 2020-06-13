@@ -1,0 +1,38 @@
+[package]
+name = "chip8-wasm"
+version = "0.1.0"
+authors = ["Hugo Camboulive <hugo@camboulive.me>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+name = "chip8wasm"
+path = "src/lib.rs"
+
+[dependencies]
+emulator = { path = "../emulator" }
+console_error_panic_hook = "=0.1.5"
+js-sys = "0.3.19"
+wasm-bindgen = "0.2.44"
+
+[dependencies.web-sys]
+version = "0.3.4"
+features = [
+  'WebGlRenderingContext',
+  'WebGlBuffer',
+  'WebGlProgram',
+  'WebGlShader',
+  'KeyboardEvent',
+  'Document',
+  'Element',
+  'HtmlCanvasElement',
+  'Window',
+  'File',
+  'FileList',
+  'HtmlButtonElement',
+  'HtmlInputElement',
+  'console',
+  'Performance',
+]
