@@ -1,0 +1,10 @@
+[package]
+name = "chip8-term"
+version = "0.1.0"
+authors = ["Hugo Camboulive <hugo@camboulive.me>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+emulator = { path = "../emulator" }

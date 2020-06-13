@@ -1,4 +1,5 @@
 [workspace]
 members = [
   "emulator",
+  "chip8-term",
 ]
