@@ -1,0 +1,13 @@
+[package]
+name = "emulator"
+version = "0.1.0"
+authors = ["Hugo Camboulive <hugo@camboulive.me>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+path = "src/emulator.rs"
+
+[dependencies.rand]
+version = "0.7"
+features = ["wasm-bindgen"]
