@@ -2,4 +2,5 @@
 members = [
   "emulator",
   "chip8-term",
+  "chip8-winit",
 ]
